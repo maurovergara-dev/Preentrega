@@ -1,0 +1,262 @@
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+
+html ¨{
+    font-size: 80px;
+}
+
+body {
+    margin-top: 0px;
+    text-align: center;
+
+}
+.flex-container {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+
+
+}
+    .flex-item {
+        width: 250px;
+        height: 50px;
+        border-radius: 50px;
+        background-color: rgb(200, 224, 245);
+        gap: 20px; 
+        border-color: rgb(208, 222, 218);
+        
+
+    
+    justify-content: space-between;
+
+    
+}
+
+/* flexitem 1 intento de estilo */
+
+.flex-item1 {
+    background-color: rgb(184, 184, 249);;
+    border-radius: 30px;
+    width: 4%;
+    height: 5%;
+    align-items: flex-end;
+    position: fixed;   /* Lo fija en la pantalla sin importar el scroll */
+    bottom: 20px;      /* Separación de 20 píxeles desde el borde inferior */
+    right: 20px;       /* Separación de 20 píxeles desde el borde derecho */
+    z-index: 9999;     /* Se asegura de que quede por encima de otros elementos */
+    
+}
+
+summary  { 
+    border: inset;
+    font-size: x-large
+}
+
+
+.viewer-container {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+   ;
+    
+    
+    
+}
+
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    /* gap: 10px; */
+    gap: 2rem;
+    /* grid-template-columns: 200px 300px 100px ; */
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); pruebas de estilo*/ 
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+    max-width: 1000px;
+
+    
+    .grid-item{
+        background-color: rgb(184, 184, 249);
+        border: 1px solid rgb(126, 187, 207);
+        border-radius: 8px;
+        width: 100%;
+        height: 50px;
+
+    }
+
+    .grid-item:hover {
+        transform: scale(1.1);
+    }
+        
+}
+
+
+
+
+model-viewer {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+
+    z-index: 1;
+
+    background: transparent;
+   
+}
+@media (max-width: 768px) {
+
+    .viewer-container {
+        height: 70vh;
+    }
+
+    model-viewer {
+        width: 100%;
+        height: 100%;
+    }
+
+    .overlay {
+        position: absolute;
+    
+        z-index: 1;
+    
+        width: 100%;
+        height: 100%;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        pointer-events: none;
+    }
+    
+    .overlay h1 {
+        color: white;
+    
+        font-size: clamp(3rem, 10vw, 10rem);
+    
+        letter-spacing: 10px;
+    
+        font-weight: 900;
+    
+        text-transform: uppercase;
+    
+        mix-blend-mode: difference;
+    }
+
+
+}
+.main-nav {
+    grid-area: navigation;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+    padding: 1rem 5%;
+    background-color:  rgb(184, 184, 249);
+
+
+
+    /* probando estilo de barra de navegacion  */
+}
+
+    /* Estilos de productos card */
+
+.products-section .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 2rem;
+
+    .product-card {
+        background-color: blue;
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        transition: var(--transition);
+        display: flex;
+        flex-direction: column;
+
+        &:hover{
+            transform: translateY(-0.5rem);
+            box-shadow: var(--shadow);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 20rem;
+            object-fit: cover;
+        }
+
+        .product-content {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        /* faltan cosas */
+
+
+    }
+
+
+}
+
+/*  FORMULARIOS PERSONALIZACIONES */
+
+.contact-section {
+    background-color: bisque;
+    
+}
+
+/* STILOS VIDEO*/
+
+.videos {
+    background-color: aqua;
+
+
+}
+
+.grid-item2 {
+    background-color: rgb(184, 184, 249);
+    width: 100%;
+        height: 100%;
+        border-radius: 60px;
+        background-color: rgb(200, 224, 245);
+        gap: 20px; 
+        border-color: rgb(208, 222, 218);
+        
+
+    
+    justify-content: space-around;
+
+} 
+    
+
+/* footer stilos */
+
+footer {
+    padding-top: 50px;
+}
+ { }
+
+
+
