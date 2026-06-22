@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    margin-top: 0px;
+    text-align: center;
+
+}
+
+.flex-container {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+
+
+}
+
+.flex-item {
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgb(200, 224, 245);
+    gap:2px;
+    border-color: rgb(208, 222, 218);
+
+
+
+    justify-content: space-between;
+
+
+}
+
+/* HOME: flexitem el boton de home 1 intento de estilo */
+
+.flex-item1 {
+    background-color: rgb(184, 184, 249);
+    ;
+    border-radius: 30px;
+    width: 4%;
+    height: 5%;
+    align-items: flex-end;
+    position: fixed;
+    /* Lo fija en la pantalla sin importar el scroll */
+    bottom: 20px;
+    /* Separación de 20 píxeles desde el borde inferior */
+    right: 20px;
+    /* Separación de 20 píxeles desde el borde derecho */
+    z-index: 9999;
+    /* Se asegura de que quede por encima de otros elementos */
+
+
+
+
+}
+
+summary {
+    border: inset;
+    font-size: x-large
+}
+
+
+.viewer-container {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    ;
+
+
+
+}
+
+/*  Altera la estructura visual de los pantalones y gorros */
+
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    /* gap: 10px; */
+    gap: 2rem;
+    /* grid-template-columns: 200px 300px 100px ; */
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); pruebas de estilo*/
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+    max-width: 1000px;
+
+
+    .grid-item {
+        background-color: rgb(184, 184, 249);
+        border: 1px solid rgb(126, 187, 207);
+        border-radius: 8px;
+        width: 100%;
+        height: 50px;
+
+    }
+
+    .grid-item:hover {
+        transform: scale(1.1);
+    }
+
+}
+
+
+
+/*  modelo 3d estilo */
+model-viewer {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+
+    z-index: 1;
+
+    background: transparent;
+
+}
+
+@media (max-width: 768px) {
+
+    .viewer-container {
+        height: 70vh;
+    }
+
+    model-viewer {
+        width: 100%;
+        height: 100%;
+    }
+
+    .overlay {
+        position: absolute;
+
+        z-index: 1;
+
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        pointer-events: none;
+    }
+
+    .overlay h1 {
+        color: white;
+
+        font-size: clamp(3rem, 10vw, 10rem);
+
+        letter-spacing: 10px;
+
+        font-weight: 900;
+
+        text-transform: uppercase;
+
+        mix-blend-mode: difference;
+    }
+
+
+}
+
+/* probando estilo de barra de navegacion  */
+.main-nav {
+    grid-area: navigation;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+    padding: 1rem 5%;
+    background-color: rgb(184, 184, 249);
+
+
+
+}
+
+
+/* Estilos de productos card Ropassss */
+
+.products-grid {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 1rem;
+    background-color: rgb(184, 184, 249); 
+    border-radius: 60px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    
+    &:hover {
+        transform: translateY(-0.4rem);
+    }
+   
+}
+
+
+/*  esto es lo de los pantalones creo */
+
+
+.product-card {
+    width: 100%;
+    height: 20rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-around;
+    
+}
+.products-grid {
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+
+
+
+
+
+
+/*  FORMULARIOS PERSONALIZACIONES */
+
+.grid-personalizaciones {
+    background-color: #90caf9;
+    display: grid;
+    margin: 5%;
+    border-radius: 30px;
+    grid-template-columns: 1fr; /* 1 columna por defecto */
+    gap: 20px;
+    padding: 20px;
+    font-size: large;
+
+}
+
+
+
+
+/* STILOS VIDEO*/
+
+.videos1 {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 columna por defecto */
+    gap: 20px;
+    padding: 20px;
+    margin: 5%
+    }
+    .cardvideo1 {
+    background-color: #90caf9;
+    padding: 30px;
+    text-align: center;
+    
+    border-radius: 10px;
+    font-weight: bold;
+    }
+    .cardvideo2 {
+        background-color: #90caf9;
+        padding: 60px;
+        text-align: center;
+        
+        border-radius: 10px;
+        font-weight: bold;
+        }
+
+
+
+/* footer stilos */
+
+footer {
+    padding-top: 50px;
+}
+
+    {}
