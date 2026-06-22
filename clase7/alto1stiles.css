@@ -1,0 +1,14 @@
+.ig-video {
+    position: relative;
+    width: 100%;
+    max-width: 500px; /* opcional */
+    margin: auto;
+    aspect-ratio: 9 / 16; /* vertical tipo Instagram */
+  }
+  
+  .ig-video iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
