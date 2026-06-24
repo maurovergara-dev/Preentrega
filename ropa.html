@@ -5,11 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-<!-- Estilo de letra -->
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Estilo de letra -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
 
     <title>Document</title>
 </head>
@@ -17,43 +23,40 @@
 <!-- icono home  -->
 
 <div class="flex-item1">
- 
-    <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><g fill="none" stroke="#0284c7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M8.941 6.349L10.755 8.9c.37.52.554.78.65 1.079c.095.3.095.619.095 1.258V20h-6c-1.886 0-2.828 0-3.414-.589c-.586-.588-.586-1.536-.586-3.431v-4.742c0-.64 0-.959.095-1.258c.096-.3.28-.56.65-1.08L4.06 6.35C5.172 4.783 5.729 4 6.5 4c.772 0 1.328.783 2.441 2.349"/><path d="M8.5 20v-4c0-.748 0-1.121-.16-1.4a1.2 1.2 0 0 0-.44-.44C7.622 14 7.248 14 6.5 14s-1.122 0-1.4.16a1.2 1.2 0 0 0-.44.44c-.16.279-.16.652-.16 1.4v4"/><path d="M8.5 20h10c1.886 0 2.828 0 3.414-.586S22.5 17.886 22.5 16v-4.552c0-.716 0-1.075-.12-1.405c-.119-.33-.348-.605-.807-1.156L18.699 5.44c-.59-.707-.884-1.061-1.287-1.25C17.008 4 16.548 4 15.627 4H6.5M22 10H11.5"/></g></svg></a>
-   
+
+    <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+            <g fill="none" stroke="#0284c7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                <path
+                    d="M8.941 6.349L10.755 8.9c.37.52.554.78.65 1.079c.095.3.095.619.095 1.258V20h-6c-1.886 0-2.828 0-3.414-.589c-.586-.588-.586-1.536-.586-3.431v-4.742c0-.64 0-.959.095-1.258c.096-.3.28-.56.65-1.08L4.06 6.35C5.172 4.783 5.729 4 6.5 4c.772 0 1.328.783 2.441 2.349" />
+                <path
+                    d="M8.5 20v-4c0-.748 0-1.121-.16-1.4a1.2 1.2 0 0 0-.44-.44C7.622 14 7.248 14 6.5 14s-1.122 0-1.4.16a1.2 1.2 0 0 0-.44.44c-.16.279-.16.652-.16 1.4v4" />
+                <path
+                    d="M8.5 20h10c1.886 0 2.828 0 3.414-.586S22.5 17.886 22.5 16v-4.552c0-.716 0-1.075-.12-1.405c-.119-.33-.348-.605-.807-1.156L18.699 5.44c-.59-.707-.884-1.061-1.287-1.25C17.008 4 16.548 4 15.627 4H6.5M22 10H11.5" />
+            </g>
+        </svg></a>
+
 </div>
+
 <!-- barra de manus -->
+
 <nav class="main-nav">
-
-    <li class="main-nav-list">
-        <a href="#product-grid" class="main-nav-link">
-            REMERAS
-        </a>
-
-
-    </li>
-
-    <li class="main-nav-list"> PANTALONES
-
-
-    </li>
-
-    <li class="main-nav-list"> GORRAS
-
-
-    </li>
+    <ul class="nav-links">
+        <li><a href="#seccion-remeras" class="nav-item">REMERAS</a></li>
+        <li><a href="#seccion-pantalones" class="nav-item">PANTALONES</a></li>
+        <li><a href="#seccion-gorras" class="nav-item">GORRAS</a></li>
+    </ul>
 </nav>
 
-
 <!-- Seccion de productos-cards -->
+<!-- REMERAS -->
 
-<h2> REMERAS</h2>
+<h2 id="seccion-remeras"> REMERAS</h2>
 
 
 
 <section class="section-title">
 
     <h2 class="section-title">
-        ** Productos **
     </h2>
 
     <div class="products-grid">
@@ -67,8 +70,8 @@
                 </h3>
 
                 <p class="product-description">
-                   Esta remera esta confeccionada en algodon
-                   con una estampa en serigrafia.
+                    Esta remera esta confeccionada en algodon
+                    con una estampa en serigrafia.
                 </p>
 
                 <p class="product-price">
@@ -81,21 +84,11 @@
                 </button>
             </div>
         </article>
-    </div>
 
-
-</section>
-
-<section class="section-title">
-
-    <h2 class="section-title">
-        ** Productos **
-    </h2>
-
-    <div class="products-grid">
+<!-- aca termina cada articulo  -->
 
         <article class="product-card">
-            <img src="https://picsum.photos/300/400?random=1" alt="Remera otaku2008" class="product-image">
+            <img src="https://picsum.photos/100/200?random=1" alt="Remera 2008" class="product-image">
             <div class="product-content">
 
                 <h3 class="product-title">
@@ -104,7 +97,7 @@
 
                 <p class="product-description">
                     Esta remera esta confeccionada en algodon
-                   con una estampa en serigrafia.
+                    con una estampa en serigrafia.
                 </p>
 
                 <p class="product-price">
@@ -117,21 +110,11 @@
                 </button>
             </div>
         </article>
-    </div>
 
-
-</section>
-
-<section class="section-title">
-
-    <h2 class="section-title">
-        ** Productos **
-    </h2>
-
-    <div class="products-grid">
+<!-- aca termina cada articulo  -->
 
         <article class="product-card">
-            <img src="https://picsum.photos/300/400?random=1" alt="Remera otaku2008" class="product-image">
+            <img src="https://picsum.photos/300/400?random=1" alt="Remera 2008" class="product-image">
             <div class="product-content">
 
                 <h3 class="product-title">
@@ -140,7 +123,7 @@
 
                 <p class="product-description">
                     Esta remera esta confeccionada en algodon
-                   con una estampa en serigrafia.
+                    con una estampa en serigrafia.
                 </p>
 
                 <p class="product-price">
@@ -151,46 +134,112 @@
                 <button type="button" class="product-button">
                     Comprar
                 </button>
-                
+
             </div>
         </article>
+
+        <article class="product-card">
+            <img src="https://picsum.photos/300/400?random=1" alt="Remera 2008" class="product-image">
+            <div class="product-content">
+
+                <h3 class="product-title">
+                    remera2008
+                </h3>
+
+                <p class="product-description">
+                    Esta remera esta confeccionada en algodon
+                    con una estampa en serigrafia.
+                </p>
+
+                <p class="product-price">
+                    <span>preecio:</span>$9999.9
+
+                </p>
+
+                <button type="button" class="product-button">
+                    Comprar
+                </button>
+
+            </div>
+        </article>
+
     </div>
 
 
 </section>
 
-
-
-
-<!-- PROBANDO INTEGRACIONES DE GRID PARA FUTUROS PROYECTOS -->
+<!-- PANTALONES -->
 
 </div>
 
-<h2> PANTALONES </h2>
-<div class="grid-container">
-    <div class="grid-item">Elemento 1</div>
-    <div class="grid-item">Elemento 2</div>
-    <div class="grid-item">Elemento 3</div>
-    <div class="grid-item">Elemento 4</div>
-    <div class="grid-item">Elemento 5</div>
-    <div class="grid-item">Elemento 6</div>
-    <div class="grid-item">Elemento 7</div>
-</div>
+<h2 id="seccion-pantalones"> PANTALONES </h2>
+<section class="section-products">
+    <div class="products-grid">
 
-<h2>GORRAS</h2>
+        <article class="product-card">
+            <img src="https://picsum.photos/300/400?random=4" alt="Pantalón Cargo" class="product-image">
+            <div class="product-content">
+                <h3 class="product-title">Pantalón Cargo Liminal</h3>
+                <p class="product-description">Pantalón de gabardina reforzado, corte ancho con bolsillos laterales
+                    cómodos.</p>
+                <p class="product-price"><span>precio:</span> $14999.9</p>
+                <button type="button" class="product-button">Comprar</button>
+            </div>
+        </article>
 
-<div class="grid-container">
-    <div class="grid-item">Elemento 1</div>
-    <div class="grid-item">Elemento 2</div>
-    <div class="grid-item">Elemento 3</div>
-    <div class="grid-item">Elemento 4</div>
-    <div class="grid-item">Elemento 5</div>
-    <div class="grid-item">Elemento 6</div>
-    <div class="grid-item">Elemento 7</div>
-</div>
+        <article class="product-card">
+            <img src="https://picsum.photos/300/400?random=5" alt="Jeans Baggy" class="product-image">
+            <div class="product-content">
+                <h3 class="product-title">Jeans Baggy 2008</h3>
+                <p class="product-description">Jeans rígidos tiro alto, prelavados y con terminaciones desgastadas.</p>
+                <p class="product-price"><span>precio:</span> $16999.9</p>
+                <button type="button" class="product-button">Comprar</button>
+            </div>
+        </article>
 
-<body>
+    </div>
 
-</body>
+
+    <!-- GORRAS -->
+
+    <h2 id="seccion-gorras">GORRAS</h2>
+
+
+    <section class="section-products">
+        <div class="products-grid">
+
+            <article class="product-card">
+                <img src="https://picsum.photos/300/400?random=6" alt="Gorra Gabardina" class="product-image">
+                <div class="product-content">
+                    <h3 class="product-title">Gorra Liminal Black</h3>
+                    <p class="product-description">Gorra de gabardina con bordado frontal de alta definición y cierre
+                        regulable.</p>
+                    <p class="product-price"><span>precio:</span> $5999.9</p>
+                    <button type="button" class="product-button">Comprar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img src="https://picsum.photos/300/400?random=7" alt="Gorra Trucker" class="product-image">
+                <div class="product-content">
+                    <h3 class="product-title">Gorra Trucker Iridiscente</h3>
+                    <p class="product-description">Gorra estilo trucker con red respirable y estampa iridiscente
+                        premium.</p>
+                    <p class="product-price"><span>precio:</span> $6499.9</p>
+                    <button type="button" class="product-button">Comprar</button>
+                </div>
+            </article>
+    </section>
+
+    <!-- SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+
+
+
+    </body>
 
 </html>
